@@ -1,7 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    
+    scroll-behavior: smooth;
+    transition: 0.1s;
+    box-sizing: border-box;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -91,7 +94,7 @@
     grid-template-columns: 18rem 18rem 18rem;
     gap: 2rem;
     padding-left: 10rem;
-    
+
     width: 100%;
     height: 100%;
 
@@ -126,18 +129,19 @@
     background-color: blueviolet;
 
 }
+
 .card {
     position: absolute;
     top: 50%;
-    transform: translate(0%,-50%);
-display: flex ;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     left: 50%;
-    width: 25rem;
-    height: 15rem;
+    width: 30rem;
+    height: 20rem;
     border: 2px solid rgb(139, 122, 29);
     padding: 3rem;
     background-color: aliceblue;
@@ -145,7 +149,259 @@ align-items: center;
 
 
 }
+
 .card>h1 {
     font-size: 3.2rem;
     padding-bottom: 1rem;
+}
+
+.section3 {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.section3>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.section3>h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    position: absolute;
+    z-index: 99;
+
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: aliceblue;
+}
+
+.section4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5rem;
+}
+
+.section4div {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 26rem 37rem;
+    gap: 5rem;
+
+
+
+
+
+
+}
+
+.section4img {}
+
+.section4img>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card2 {
+    position: absolute;
+    top: 48%;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    right: 48%;
+    width: 35rem;
+    height: 20rem;
+    border: 2px solid rgb(139, 122, 29);
+    padding: 3rem;
+    background-color: aliceblue;
+
+
+
+}
+
+.card2>h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+.span1 {
+    font-family: 'Pacifico', cursive;
+
+}
+
+
+.pricespecial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: 2px solid rgb(139, 122, 29);
+    color: rgb(139, 122, 29);
+
+
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+}
+
+.section5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-head-container {
+    width: 80%;
+    height: 17vh;
+    background-color: rgba(0, 0, 0, 0.96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+
+
+}
+
+.menu-head-warpper {
+
+    margin: 1rem 2rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(139, 122, 29);
+}
+
+.menu-head-warpper>h1 {
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.border-text {
+
+    color: rgb(139, 122, 29);
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    text-align: center;
+    background-color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
+
+.border-text2 {
+
+    color: rgb(139, 122, 29);
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    text-align: center;
+    background-color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: 100vh;
+    width: 80%;
+    padding-top: 5rem;
+
+}
+
+.menu1 {
+    border: 2px solid rgb(139, 122, 29);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.menu2 {
+    border: 2px solid rgb(139, 122, 29);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.menu3 {
+    border: 2px solid rgb(139, 122, 29);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: fit-content;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu>span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-bread {
+    font-size: .7rem;
+}
+
+.menu-btn-div {
+    display: flex;
+
+    align-items: center;
+}
+
+.menu-btn {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: rgb(139, 122, 29);
+}
+
+.menu-head {
+    padding-bottom: 1rem;
+
+
+}
+
+.menu-head>h1 {
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
 }
