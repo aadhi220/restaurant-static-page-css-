@@ -48,12 +48,25 @@
 
 .logo {
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .reserve {
     color: aliceblue;
     border: 2px solid rgb(141, 104, 45);
     padding: .5rem 2rem;
+}
+
+.checkbox-btn {
+    color: white;
+    display: none;
+  
+}
+
+#check {
+    display: none;
 }
 
 .header-text {
@@ -151,7 +164,7 @@
 }
 
 .card>h1 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     padding-bottom: 1rem;
 }
 
@@ -176,7 +189,7 @@
     position: absolute;
     z-index: 99;
 
-    top: 50%;
+    top: 40%;
     transform: translate(0%, -50%);
     left: 50%;
     transform: translate(-50%, 0%);
@@ -405,3 +418,139 @@
     font-weight: 500;
     text-decoration: underline;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+
+   
+
+    .container {
+      height: auto;
+    }
+  
+    .header {
+      height: 60vh;
+    }
+
+    .reserve {
+        transform: scale(0.9);
+
+    }
+/*   
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .list {
+      margin-bottom: 1rem;
+    } */
+  
+    .header-text {
+      text-align: center;
+      padding: 2rem 1rem; 
+    }
+  
+    .hdtext1 {
+      font-size: 2rem;
+    }
+  
+    .hdtext2 {
+      font-size: 2rem;
+    }
+  
+    .section-2 {
+      padding: 2rem 1rem; 
+    }
+  
+    .div2 {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding-left: 0;
+    }
+  
+    .card {
+      position: static;
+      width: 100%;
+      height: auto;
+      padding: 2rem 1rem; 
+      margin-top: 2rem;
+    }
+  
+    .card2 {
+      position: static;
+      width: 100%;
+      height: auto;
+      padding: 2rem 1rem; 
+      margin-top: 2rem;
+    }
+  
+    .section4div {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-grid {
+      grid-template-columns: 1fr;
+      padding: 2rem 1rem; 
+    }
+  
+    .menu1,
+    .menu2,
+    .menu3 {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+  
+    .menu-head-container {
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .border-text,
+    .border-text2 {
+      display: none;
+    }
+    .checkbox-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 1.5rem;
+        padding: 1rem 1rem;
+        
+      }
+
+
+      .items {
+        position: fixed;
+        top: 70px;
+        width: 50%;
+        height: 12%;
+        text-align: left;
+        padding-top: 2rem;
+        padding-left: 3rem;
+        left:0;
+        top: -100%;
+        transition: all 0.5s;
+        background-color: rgba(14, 14, 14, 0.867);
+       }
+       .list {
+        display: block;
+       }
+       .header > #check:not(:checked) ~ .navbar>.items {
+           height: 0px;
+         }
+         .header > #check:checked ~ .navbar>.items {
+            top: 70px;
+         }
+         .header > #check:checked ~ .navbar {
+            background-color:rgba(14, 14, 14, 0.867) ;
+            transition: all 0.8s;
+         }
+
+  }
+  
