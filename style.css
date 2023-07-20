@@ -9,8 +9,9 @@
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    position: relative;
 
     perspective: 10px;
 
@@ -46,11 +47,20 @@
     color: aliceblue;
 }
 
+.links:hover {
+    color: rgba(255, 217, 0, 0.792);
+    
+}
+
 .logo {
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: larger;
+}
+.logo:hover {
+    color: rgba(255, 217, 0, 0.792);
 }
 
 .reserve {
@@ -59,10 +69,15 @@
     padding: .5rem 2rem;
 }
 
+.reserve:hover {
+    color: rgba(255, 217, 0, 0.792);
+    background-color: black;
+}
+
 .checkbox-btn {
     color: white;
     display: none;
-  
+
 }
 
 #check {
@@ -95,7 +110,7 @@
 
 .section-2 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
@@ -139,7 +154,7 @@
 
 .img2 {
     width: 100%;
-    background-color: blueviolet;
+ 
 
 }
 
@@ -155,7 +170,7 @@
     left: 50%;
     width: 30rem;
     height: 20rem;
-    border: 2px solid rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
     padding: 3rem;
     background-color: aliceblue;
     text-align: justify;
@@ -170,7 +185,7 @@
 
 .section3 {
     width: 100%;
-    height: 60vh;
+    height: 25rem;
     position: relative;
 }
 
@@ -188,17 +203,19 @@
 
     position: absolute;
     z-index: 99;
-
+    font-family: 'Pacifico';
+    
     top: 40%;
     transform: translate(0%, -50%);
     left: 50%;
     transform: translate(-50%, 0%);
-    color: aliceblue;
+    color: rgba(255, 217, 0, 0.792);
+    text-shadow: 1px 1px black;
 }
 
 .section4 {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
@@ -239,7 +256,7 @@
     right: 48%;
     width: 35rem;
     height: 20rem;
-    border: 2px solid rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
     padding: 3rem;
     background-color: aliceblue;
 
@@ -268,9 +285,14 @@
     width: 10rem;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-    border: 2px solid rgb(139, 122, 29);
-    color: rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
+    color: rgba(255, 217, 0, 0.792);
 
+
+}
+
+.btn:hover {
+    background-color: black;
 
 }
 
@@ -279,15 +301,22 @@
 }
 
 .section5 {
+    width: 100%;
+    min-height: 100%;
+}
+.section5div {
     display: flex;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .menu-head-container {
     width: 80%;
-    height: 17vh;
+    
     background-color: rgba(0, 0, 0, 0.96);
     display: flex;
     justify-content: center;
@@ -307,7 +336,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
 }
 
 .menu-head-warpper>h1 {
@@ -318,7 +347,7 @@
 
 .border-text {
 
-    color: rgb(139, 122, 29);
+    color: rgba(255, 217, 0, 0.792);
     z-index: 99;
     position: absolute;
     top: 0;
@@ -331,7 +360,7 @@
 
 .border-text2 {
 
-    color: rgb(139, 122, 29);
+    color: rgba(255, 217, 0, 0.792);
     z-index: 99;
     position: absolute;
     bottom: 0;
@@ -342,18 +371,21 @@
     font-size: 1.2rem;
 }
 
+.border-text2>i:hover {
+    transform: scale(1.2);
+}
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    height: 100vh;
+    height: 100%;
     width: 80%;
     padding-top: 5rem;
 
 }
 
 .menu1 {
-    border: 2px solid rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -362,7 +394,7 @@
 }
 
 .menu2 {
-    border: 2px solid rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -371,7 +403,7 @@
 }
 
 .menu3 {
-    border: 2px solid rgb(139, 122, 29);
+    border: 2px solid rgba(255, 217, 0, 0.792);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -404,7 +436,12 @@
     padding: 5px;
     border: none;
     background-color: transparent;
-    color: rgb(139, 122, 29);
+    color: rgba(255, 217, 0, 0.792);
+}
+.menu-btn:hover {
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 5px;
 }
 
 .menu-head {
@@ -419,113 +456,263 @@
     text-decoration: underline;
 }
 
+.section6 {
+    width: 100%;
+    
+    
+    margin-top: 15rem;
+    height: fit-content;
+   
+    
+}
+.section6div {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section6div>img {
+    width: 100%;
+    object-fit: cover;
+    
+
+    z-index: 0;
+
+}
+
+.card6 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.cardspan1 {
+    font-family: 'Pacifico', cursive;
+    color: rgba(255, 217, 0, 0.792);
+    font-size: 1.5rem;
+}
+
+.cardspan2 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: aliceblue;
 
 
+
+}
+
+.cardspan3 {
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.date-time {
+    border: 1px solid rgba(255, 217, 0, 0.792);
+    padding: 10px;
+    width: 10rem;
+    background-color: rgba(17, 17, 17, 0.66);
+    color: aliceblue;
+
+
+
+}
+.date-time:hover {
+    transform: scale(1.05);
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.card-btn {
+    width: fit-content;
+    background-color: rgba(19, 19, 18, 0.581);
+    color: aliceblue;
+    padding: 1rem;
+    border: 1px solid rgba(255, 217, 0, 0.792);
+
+
+}
+
+.card-btn:hover {
+    background-color: black;
+    color: gold;
+    transform: scale(1.05);
+}
+
+
+.footer {
+
+    width: 100%;
+    height: 15rem;
+    background-color: rgba(30, 28, 28, 0.992);
+    color: aliceblue;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.footer-decrip {
+    width: 50%;
+}
+
+.footer-head {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.footer-btngrp {
+    margin-left: 5rem;
+}
+
+.footer-btn {
+    background-color: transparent;
+    color: rgba(255, 217, 0, 0.792);
+    width: 5rem;
+    margin: 5px;
+    border: 1px solid rgba(255, 217, 0, 0.792);
+}
+.footer-btn:hover {
+    background-color: black;
+    color: gold;
+    transform: scale(1.05);
+}
 
 
 @media (max-width: 768px) {
 
    
-
     .container {
-      height: auto;
+        height: auto;
     }
-  
+
     .header {
-      height: 60vh;
+        height: 60vh;
     }
 
     .reserve {
         transform: scale(0.9);
+    }
+
+    .header-text {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hdtext1 {
+        font-size: 2rem;
+    }
+
+    .hdtext2 {
+        font-size: 2rem;
+    }
+
+    .section-2 {
+        padding: 2rem 1rem;
 
     }
-/*   
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-    }
-  
-    .list {
-      margin-bottom: 1rem;
-    } */
-  
-    .header-text {
-      text-align: center;
-      padding: 2rem 1rem; 
-    }
-  
-    .hdtext1 {
-      font-size: 2rem;
-    }
-  
-    .hdtext2 {
-      font-size: 2rem;
-    }
-  
-    .section-2 {
-      padding: 2rem 1rem; 
-    }
-  
+
     .div2 {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      padding-left: 0;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-left: 0;
+        width: 100%;
+        height: 100%;     
     }
-  
+
     .card {
-      position: static;
-      width: 100%;
-      height: auto;
-      padding: 2rem 1rem; 
-      margin-top: 2rem;
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
     }
-  
+
     .card2 {
-      position: static;
-      width: 100%;
-      height: auto;
-      padding: 2rem 1rem; 
-      margin-top: 2rem;
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+        margin-top: 2rem;
     }
-  
+
+    .section4 {
+        padding: 1rem;
+    }
+
     .section4div {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        height: fit-content;
     }
-  
+
+    .section5 {
+        width: 100%;
+        height: 100%;
+    }
+    .section5div {
+        width: 100%;
+        height: 100%;
+    }
+
     .menu-grid {
-      grid-template-columns: 1fr;
-      padding: 2rem 1rem; 
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0rem;
+        
+        
     }
-  
+
+
+
+
+
+
     .menu1,
     .menu2,
     .menu3 {
-      width: 100%;
-      height: auto;
-      margin-bottom: 2rem;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 2rem;
     }
-  
+
     .menu-head-container {
-      height: auto;
-      flex-direction: column;
+
+        height: auto;
+        width: 100%;
     }
-  
+.menu-head-warpper {
+    
+    
+}
     .border-text,
     .border-text2 {
-      display: none;
+        display: none;
     }
+
     .checkbox-btn {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 1.5rem;
         padding: 1rem 1rem;
-        
-      }
+    }
 
-
-      .items {
+    .items {
         position: fixed;
         top: 70px;
         width: 50%;
@@ -533,24 +720,122 @@
         text-align: left;
         padding-top: 2rem;
         padding-left: 3rem;
-        left:0;
+        left: 0;
         top: -100%;
         transition: all 0.5s;
         background-color: rgba(14, 14, 14, 0.867);
-       }
-       .list {
-        display: block;
-       }
-       .header > #check:not(:checked) ~ .navbar>.items {
-           height: 0px;
-         }
-         .header > #check:checked ~ .navbar>.items {
-            top: 70px;
-         }
-         .header > #check:checked ~ .navbar {
-            background-color:rgba(14, 14, 14, 0.867) ;
-            transition: all 0.8s;
-         }
+    }
 
-  }
-  
+    .list {
+        display: block;
+    }
+
+    .header>#check:not(:checked)~.navbar>.items {
+        height: 0px;
+    }
+
+    .header>#check:checked~.navbar>.items {
+        top: 70px;
+    }
+
+    .header>#check:checked~.navbar {
+        background-color: rgba(14, 14, 14, 0.867);
+        transition: all 0.8s;
+    }
+
+    .section6 {
+        margin-top: 5rem;
+       height: fit-content;
+       width: 100%;
+       
+
+    }
+    .section6div {
+        width: 100%;
+        height: fit-content;
+    }
+    .section6div>img {
+        width: auto;
+    }
+
+    .card6 {
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .cardspan1 {
+        font-size: 1.2rem;
+    }
+
+    .cardspan2 {
+        font-size: 1.5rem;
+    }
+
+    .cardspan3 {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 1rem;
+    }
+
+    .date-time {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .btn-div {
+        margin: 0;
+    }
+
+    .card-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+
+
+    .footer {
+position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+       
+    
+        /* font-size: 8px; */
+        height: 15rem;
+
+    }
+
+    .footer-decrip {
+        width: 100%;
+        text-align: center;
+        text-align: justify;
+        margin: 0;
+        font-size: 8px;
+        display: none;
+        
+    }
+
+    .footer-head {
+        margin: 0;
+        font-size: 10px;
+    }
+    .footer-head>span {
+        
+    }
+
+    .footer-btngrp {
+        margin: 0;
+        transform: scale(.7);
+    }
+
+
+
+
+
+
+
+
+}
