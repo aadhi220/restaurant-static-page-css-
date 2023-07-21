@@ -17,29 +17,37 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up fa-lg"></i>
+    </button>
+
     <div class="container">
-      <header class="header">
+      <!-- Header section -->
+      <header id="home" class="header">
+        <!-- Hamburger menu icon for mobile navigation -->
         <input type="checkbox" id="check" />
         <label for="check" class="checkbox-btn">
           <i class="fa-solid fa-bars"></i>
         </label>
+        <!-- Navigation bar -->
         <nav class="navbar">
-
           <div class="logo">CHOPSY</div>
+          <!-- Navigation links -->
 
-          
-        
           <ul class="items">
-            <li class="list"><a href="" class="links">Home</a></li>
-            <li class="list"><a href="" class="links">Menu</a></li>
-            <li class="list"><a href="" class="links">Gallery</a></li>
-            <li class="list"><a href="" class="links">Contact</a></li>
+            <li class="list"><a href="#home" class="links">Home</a></li>
+            <li class="list"><a href="#menu" class="links">Menu</a></li>
+            <li class="list"><a href="#gallery" class="links">Gallery</a></li>
+            <li class="list"><a href="#footer" class="links">Contact</a></li>
             <li class="list"><a href="" class="links">About</a></li>
           </ul>
-          <div class="reserve">Reservation</div>
+          <a style="text-decoration: none" href="#reservation">
+            <div class="reserve">Reservation</div>
+          </a>
         </nav>
-
+        <!-- Header text -->
         <div class="header-text">
           <span class="hdtext1">Chopsy</span>
           <span class="hdtext2">An Extraordinary Experience</span>
@@ -49,8 +57,10 @@
           >
         </div>
       </header>
+
       <!-- section 2 -->
-      <section class="section-2" data-aos="fade-up">
+      <section class="section-2"  data-aos="fade-up">
+        <!-- Images and content -->
         <div class="div2">
           <div class="img1">
             <img
@@ -73,16 +83,19 @@
         </div>
       </section>
 
+      <!-- Section 3 -->
       <section class="section3" data-aos="fade-up">
         <h1>Food for the Soul</h1>
+        <!-- Video element -->
         <video
           autoplay
           muted
           src="./pexels-polina-kovaleva-5645037 (1080p).mp4"
         ></video>
       </section>
-
+      <!-- Section 4 -->
       <section class="section4" data-aos="fade-up">
+        <!-- Content and images -->
         <div class="section4div">
           <div></div>
           <div class="section4img">
@@ -92,7 +105,7 @@
             />
           </div>
 
-          <div class="card2" >
+          <div class="card2">
             <span class="span1">Something Special</span>
             <h3>Our Signature Dish</h3>
             <span class="starrating"></span>
@@ -105,12 +118,11 @@
           </div>
         </div>
       </section>
-
-      <section class="section5 " data-aos="fade-up"
-      >
+      <!-- Section 5 -->
+      <section class="section5" id="menu" data-aos="fade-up">
+        <!-- Menu section -->
 
         <div class="section5div">
-          
           <div class="menu-head-container">
             <div class="menu-head-warpper">
               <h1>The Menu</h1>
@@ -124,10 +136,12 @@
               ><i class="fa-solid fa-star fa-xs"></i>
             </div>
           </div>
-  
+
           <div class="menu-grid">
             <div class="menu1">
-              <div class="menu-head"><h1>Starters</h1></div>
+              <div class="menu-head">
+                <h1>Starters</h1>
+              </div>
               <div class="menu">
                 <span><span>Garlic Shrimp</span> <span>$12</span></span>
                 <span class="menu-bread"
@@ -137,7 +151,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Caprese Salad</span> <span>$10</span></span>
                 <span class="menu-bread"
@@ -148,7 +162,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Stuffed Mushrooms</span> <span>$9</span></span>
                 <span class="menu-bread"
@@ -159,7 +173,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Bruschetta</span> <span>$8</span></span>
                 <span class="menu-bread"
@@ -170,7 +184,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Chicken Satay</span> <span>$11</span></span>
                 <span class="menu-bread"
@@ -180,7 +194,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Spinach Artichoke Dip</span> <span>$8</span></span>
                 <span class="menu-bread"
@@ -193,7 +207,9 @@
               </div>
             </div>
             <div class="menu2">
-              <div class="menu-head"><h1>Main Courses</h1></div>
+              <div class="menu-head">
+                <h1>Main Courses</h1>
+              </div>
               <div class="menu">
                 <span><span>Grilled Salmon</span> <span>$22</span></span>
                 <span class="menu-bread"
@@ -204,7 +220,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Filet Mignon</span> <span>$28</span></span>
                 <span class="menu-bread"
@@ -215,28 +231,29 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Vegetable Stir Fry</span> <span>$18</span></span>
                 <span class="menu-bread"
-                  >Assorted vegetables sautéed in a savory soy-ginger sauce.</span
+                  >Assorted vegetables sautéed in a savory soy-ginger
+                  sauce.</span
                 >
                 <div class="menu-btn-div">
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Chicken Alfredo</span> <span>$20</span></span>
                 <span class="menu-bread"
-                  >Grilled chicken tossed with creamy Alfredo sauce and fettuccine
-                  pasta.</span
+                  >Grilled chicken tossed with creamy Alfredo sauce and
+                  fettuccine pasta.</span
                 >
                 <div class="menu-btn-div">
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Lobster Ravioli</span> <span>$25</span></span>
                 <span class="menu-bread"
@@ -247,7 +264,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Rack of Lamb</span> <span>$30</span></span>
                 <span class="menu-bread"
@@ -258,7 +275,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Seafood Paella</span> <span>$26</span></span>
                 <span class="menu-bread"
@@ -271,7 +288,9 @@
               </div>
             </div>
             <div class="menu3">
-              <div class="menu-head"><h1>Desserts</h1></div>
+              <div class="menu-head">
+                <h1>Desserts</h1>
+              </div>
               <div class="menu">
                 <span><span>Tiramisu</span> <span>$9</span></span>
                 <span class="menu-bread"
@@ -282,17 +301,18 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Fruit Sorbet</span> <span>$7</span></span>
                 <span class="menu-bread"
-                  >Refreshing sorbet made with a medley of seasonal fruits.</span
+                  >Refreshing sorbet made with a medley of seasonal
+                  fruits.</span
                 >
                 <div class="menu-btn-div">
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Chocolate Fondue</span> <span>$10</span></span>
                 <span class="menu-bread"
@@ -303,7 +323,7 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Cheesecake</span> <span>$8</span></span>
                 <span class="menu-bread"
@@ -314,18 +334,18 @@
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Crème Brûlée</span> <span>$9</span></span>
                 <span class="menu-bread"
-                  >Rich custard with a caramelized sugar crust, served with fresh
-                  berries.</span
+                  >Rich custard with a caramelized sugar crust, served with
+                  fresh berries.</span
                 >
                 <div class="menu-btn-div">
                   <button class="menu-btn">Order Now</button>
                 </div>
               </div>
-  
+
               <div class="menu">
                 <span><span>Apple Pie</span> <span>$8</span></span>
                 <span class="menu-bread"
@@ -338,16 +358,117 @@
               </div>
             </div>
           </div>
-        
-        </div></section>
+        </div>
+      </section>
+      <section class="section7" data-aos="fade-up" id="gallery">
 
-      <section class="section6" data-aos="fade-up">
-       <div class="section6div">
+       <div style="display: flex; justify-content: center;">
+          <div  class="menu-head-container">
+            <div class="menu-head-warpper">
+              <h1>Gallery</h1>
+            </div>
+           
+          </div>
+       </div>
+     
+        <div class="gallery-row">
+          <div class="gallery-column">
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/13814644/pexels-photo-13814644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+
+              <div class="middle">
+                <div class="gallery-text">Pizza</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Pasta</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/16711257/pexels-photo-16711257/free-photo-of-food-plate-restaurant-dinner.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Sushi</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Steak</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/4109234/pexels-photo-4109234.jpeg"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Fries</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Salad</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Pizza</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Pizza</div>
+              </div>
+            </div>
+            <div class="gimg">
+              <img
+                src="https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+              <div class="middle">
+                <div class="gallery-text">Pizza</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section6" id="reservation" data-aos="fade-up">
+        <!-- Reservation form -->
+        <div class="section6div">
           <img
             src="https://preview.colorlib.com/theme/thevenue/images/reservations.jpg"
             alt=""
           />
-  
+
           <div class="card6">
             <div>
               <span class="cardspan1">5 Stars</span>
@@ -378,10 +499,14 @@
               <button class="card-btn">Make a Reservation</button>
             </div>
           </div>
-       </div>
+        </div>
       </section>
 
-      <footer class="footer">
+    
+
+      <!-- Footer -->
+      <footer id="footer" class="footer">
+        <!-- Footer content -->
         <div class="footer-head">
           <h1>Chopsy</h1>
           <span>RESTAURANT</span><span>Copyright &copy Chopsy</span>
@@ -390,7 +515,6 @@
         <div class="footer-decrip">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio omnis
           adipisci culpa fuga accusamus quae, suscipit esse autem a, nulla enim
-          
         </div>
         <div class="footer-btngrp">
           <div class="footer-add">
@@ -409,9 +533,37 @@
       </footer>
     </div>
 
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- AOS library for animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      // Initialize AOS library
+      AOS.init();
+    </script>
   </body>
 </html>
